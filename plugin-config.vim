@@ -37,7 +37,7 @@ autocmd FileType python let b:coc_suggest_disable = 1
 autocmd FileType javascript let b:coc_suggest_disable = 1
 
 " Kite
-let g:kite_supported_languages = ['javascript', 'python']
+let g:kite_supported_languages = ['*']
 
 " UltiSnips
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']

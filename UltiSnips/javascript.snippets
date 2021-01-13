@@ -36,6 +36,12 @@ describe("$1", () => {
 });
 endsnippet
 
+snippet bch "beforeEach(async () => {})" 1
+beforeEach(${1:async }() => {
+    $2
+});
+endsnippet
+
 snippet co "const = " b
 const $1 = $2;
 endsnippet
@@ -61,13 +67,14 @@ import React from "react";
 
 import styles from "./$1.module.scss";
 
-function $1${2:($3)} {
+const $1 = (${2:{ $3 }}) => {
     return (
-	<$4>
-	    $5
-	</$4>
+	<div>
+	    $4
+	</div>
     );
 }
+
 export default $1;
 endsnippet
 
